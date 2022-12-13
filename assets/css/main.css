@@ -791,7 +791,7 @@ input, select, textarea {
 			margin-right: auto;
 			margin-top: 2.5rem;
 			margin-bottom: 2.5rem;
-			width: 50%;/*100%;*/
+			width: 60%;/*100%;*/
 			text-align: center;
 		}
 
@@ -1446,6 +1446,8 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
+			padding-bottom: 0; /* added to keep vertical lines touching top and bottom */
+			padding-top: 0; /* added to keep vertical lines touching top and bottom */
 			border: solid 1px #333;/*#ffffff;*/
 			border-radius: 4px;
 		}
@@ -1765,8 +1767,24 @@ input, select, textarea {
 		}
 
 /* Extras - AH */
-	.clearfix::after {
+	/*.clearfix::after {
 		content: "";
 		clear: both;
 		display: table;
+	}*/
+
+	.flex-item {
+		/*border: 1px solid lightblue;*/
+		width: 100%;
+		/*height: 100%;*/
+		/*display: flex;
+		transition: .7s;
+		align-items: flex-end;*/
+	}
+
+	.flex-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
 	}
