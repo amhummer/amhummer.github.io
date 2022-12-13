@@ -866,6 +866,16 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
+	p, ul {
+		padding: 0.25rem;
+		margin: 0;
+	}
+
+	.li_indent {
+		padding-left: 2rem;
+		float: left;
+	}
+
 /* Actions */
 
 	ul.actions {
@@ -1753,3 +1763,10 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Extras - AH */
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
