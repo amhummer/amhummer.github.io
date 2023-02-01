@@ -687,7 +687,6 @@ input, select, textarea {
 		padding: 0.8rem;
 		color: #333;
 		background: #f2f2f2;
-		cursor: pointer;
 		border-radius: 4px;
 		transition: all 0.25s ease-out;
 	}
@@ -844,6 +843,20 @@ input, select, textarea {
 			}
 
 		}
+	
+	.image_not_inline img {
+		border-radius: 0px;
+		border: 0;
+		position: relative;
+		max-width: 60%;
+	}
+
+	.image_not_inline_small img {
+		border-radius: 0px;
+		border: 0;
+		position: relative;
+		max-width: 25%;
+	}
 
 /* List */
 
