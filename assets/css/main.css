@@ -182,6 +182,7 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		overflow-wrap: break-word;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1493,6 +1494,7 @@ input, select, textarea {
 			padding-top: 0; /* added to keep vertical lines touching top and bottom */
 			border: solid 1px #333;/*#ffffff;*/
 			border-radius: 4px;
+			overflow: hidden;
 		}
 
 			#header nav ul li {
@@ -1572,7 +1574,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
-				display: none;
+				/*display: none;*/
+				display: block; !important
 			}
 
 		}
@@ -1605,6 +1608,11 @@ input, select, textarea {
 			#header .content p {
 				line-height: 1.875;
 			}
+
+			#header .content br {
+				display: block; !important
+			}
+
 
 		}
 
