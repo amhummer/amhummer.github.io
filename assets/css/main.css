@@ -182,7 +182,6 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
-		overflow-wrap: break-word;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -192,10 +191,10 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #333;/*#ffffff;*/
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
+			width: -moz-fit-content;
+			width: -webkit-fit-content;
+			width: -ms-fit-content;
+			width: fit-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
 		}
@@ -1624,6 +1623,11 @@ input, select, textarea {
 
 				#header .content .inner {
 					padding: 2.5rem 0;
+				}
+
+				#header .content p br {
+					/*display: none;*/
+					display: block; !important
 				}
 
 				#header nav ul {
