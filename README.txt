@@ -14,3 +14,6 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+
+Blog post about how I created this website: https://www.blopig.com/blog/2023/02/creating-a-personal-website/
