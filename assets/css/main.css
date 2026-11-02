@@ -1843,3 +1843,74 @@ input, select, textarea {
 		align-items: center;
 		padding: 0;
 	}
+
+	.featured-posts {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		margin: 0 0 2rem 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.featured-post {
+		display: flex;
+	}
+
+		.featured-post a.featured-post-link {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 1.25rem;
+			width: 100%;
+			border-bottom: 0;
+			color: inherit;
+		}
+
+		.featured-post-thumb {
+			display: block;
+			flex: 0 0 auto;
+			width: 160px;
+			aspect-ratio: 16 / 10;
+			overflow: hidden;
+			border-radius: 4px;
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+
+			.featured-post-thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+				-moz-transition: transform 0.325s ease-in-out;
+				-webkit-transition: transform 0.325s ease-in-out;
+				-ms-transition: transform 0.325s ease-in-out;
+				transition: transform 0.325s ease-in-out;
+			}
+
+		.featured-post a.featured-post-link:hover .featured-post-thumb img {
+			-moz-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			transform: scale(1.05);
+		}
+
+		.featured-post-title {
+			font-size: 1rem;
+			font-weight: 600;
+			line-height: 1.4;
+			margin: 0;
+			flex: 1 1 auto;
+		}
+
+		.featured-post a.featured-post-link:hover .featured-post-title {
+			text-decoration: underline;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.featured-post-thumb {
+				width: 110px;
+			}
+
+		}
